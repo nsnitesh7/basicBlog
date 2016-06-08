@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+
+{% block head_title %}
+{{ instance.title }} | {{ block.super }}
+{% endblock head_title %}
+
+
+
+{% block content %}
+    <p class='col-sm-6 col-sm-offset-3'>
+        <div id="post_title">
+            <h1>{{ title }} <small>{{ instance.timestamp }}</small></h1>
+        </div>
+        <br/>
+        <br/>
+        <div id="post_detail">
+            {{ instance.content|linebreaks }}<br/>
+        </div>
+        <p class = "tpbutton btn-toolbar" style="text-align:center">
+            <a href="{{ instance.get_absolute_url }}edit" class="btn btn-primary" role="button">Edit</a>
+            <a href="{{ instance.get_absolute_url }}delete" class="btn btn-primary" role="button">Delete</a>
+        </p>
+    </div>
+{% endblock content %}

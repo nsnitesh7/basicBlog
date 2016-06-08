@@ -1,0 +1,39 @@
+h1,h2 {
+    font-weight: bold;
+    color: black;
+}
+
+body {
+    background-color: dimgrey;
+}
+
+h1 small {
+    color: darkgray;
+}
+
+.page-header {
+    margin-top: -15px;
+    padding: 5px;
+    background-color: black;
+}
+
+#post_detail {
+    color: white;
+}
+
+#id_title {
+    width: 100%;
+    alignment: right;
+}
+
+#id_content {
+    height:200px;
+    width: 100%;
+    alignment: right;
+}
+
+#lastUpdated {
+    color: grey;
+    font-weight: bold;
+    font-size: small;
+}
